@@ -1,1 +1,41 @@
 // Navigation Styles here
+
+nav {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    justify-content: flex-end;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media @mobile {
+        flex-direction: column;
+    }
+
+    h1 {
+        margin-right: auto;
+
+        @media @mobile {
+            margin-left: auto;
+            font-size: 6rem;
+        }
+    }
+
+    a {
+        font-size: 1.6rem;
+        padding: 12px;
+
+        @media @mobile {
+            font-size: 3rem;
+        }
+    }
+
+    .navlinks {
+        @media @mobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
